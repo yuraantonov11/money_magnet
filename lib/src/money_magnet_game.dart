@@ -20,6 +20,7 @@ class _MoneyMagnetGameState extends State<MoneyMagnetGame> {
     setState(() {
       isGameStarted = true;
       moneyCount = 0;
+      increaseMoney();
     });
   }
 
@@ -73,7 +74,7 @@ class _MoneyMagnetGameState extends State<MoneyMagnetGame> {
             ),
             SizedBox(height: 20),
             SvgPicture.asset(
-              'assets/images/magnet.svg',
+              'images/magnet.svg',
               height: 100,
               width: 100,
             ),
